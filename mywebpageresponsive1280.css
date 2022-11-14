@@ -1,0 +1,319 @@
+@media(min-width:1025px) and (max-width:1280px){
+    *{
+        color: gray;
+        text-transform: capitalize;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    ul,ol,li{
+        list-style: none;
+        display: inline-block;
+    }
+    a{
+        display: inline-block !important;
+        text-decoration: none !important;
+    }
+    body{
+        background-color: #000;
+    }
+    /* -------------------nvabar--------------------------- */
+    div[class*="shubham"],div[class*="shubhu"],div[class*="service"],div[class*="meet"]{
+        padding: 20px;
+        text-align: center;
+        background-color: #000 !important;
+    }
+    .item {
+        padding: 5px;
+        font-size: 25px;
+        color: rgb(128, 128, 128);
+        position: relative;
+    
+    }
+    .item::before{
+        content: '';
+        position: absolute;
+        padding-left: 20px;
+         width: 10px;
+        height:10px; 
+        border-top:1px solid #fff ;
+        border-left:1px solid #fff ;
+        left: 0;
+        transition: all 0.5s linear;
+    }
+    .item::after{
+        content: '';
+        position: absolute;
+         width: 10px;
+        height: 10px;
+        border-bottom:1px solid #fff ;
+        border-right:1px solid #fff ;
+         bottom: 2px;
+         padding-left: 20px;
+         right: 0;
+         transition: all 0.5s linear;
+    }
+    .item:hover.item::after,
+    .item:hover.item::before{
+        text-decoration: none ;
+        color: #f00;
+        width: 90px;
+        height: 45px;
+    }
+    .hoverdest:hover{
+        color: red;
+        text-decoration: none;
+    }
+    /* -----------------------------------banner photo--------------------- */
+    div[class*="bannertext"],
+    div[class*="bannerphoto"]{
+        /* height: 100vh; */
+        background-color: #000 ;
+        position: relative;
+        overflow: hidden;
+    }
+    h1[class*="display-4"]{
+        position: absolute;
+        top: 280px;
+        left: 85px;
+        font-size: 45px;
+        letter-spacing: 5px;
+        animation-name: mitesh;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-delay: 0.5s;
+    }
+    h1[class*="display-4"]::first-letter{
+        color: #f00;
+        letter-spacing: 20px;
+        font-size: 80px;
+    }
+    @keyframes mitesh {
+        0%,100% {
+            transform: translatey(0px);
+            opacity: 0;
+        }
+        50%{
+            opacity: 1;
+            transform: translatey(780px);
+        }
+    }
+    h2[class*="display-4"]{
+        font-size: 44px;
+        position: absolute;
+        top:434px;
+        left: 119px;
+        letter-spacing: 5px;
+        animation-name: miteshma;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-delay: 0.5s;
+    }
+    @keyframes miteshma {
+        0%,100% {
+            transform: translatey(0px);
+            opacity: 0;
+        }
+        50%{
+            opacity: 1;
+            transform: translatey(880px);
+        }
+    }
+    .and{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: #fff;
+        display: block;
+        text-align: center;
+    }
+    .designer{
+        font-size: 5spx;
+        color: #f00;
+        margin-left: 20px;
+    }
+    .designer::first-letter{
+        color: #fff;
+        font-size: 50px;
+        letter-spacing: 5px;
+    }
+    div[class*="animationborder"]{
+        animation-iteration-count: infinite;
+        animation-duration: 3s;
+        transition: all ease 0.5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        height: 100vh;
+        background-color: #000;
+    }
+    div[class*="animationborder"]::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(#00ccff, #d400d4);
+        animation:  animate 15s linear infinite;
+        transition: all 0.5s ease;
+    }
+    div[class*="animationborder"]::after{
+        content: '';
+        position: absolute;
+        inset: 4px;
+        background: #000;
+        border-radius: 20px;
+    }
+    @keyframes animate {
+        0%,100%{
+            transform: rotate(0deg);
+        }
+        50%{
+            transform: rotate(200deg);
+        }
+    }
+    div[class*="firastimg"]{
+        background-image: url(../img/IMG_6649.jpeg) !important;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 70%;
+        height: 80%;
+        left:10px;
+        top: 0px;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        animation-name: img;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+        animation-delay: 0.5s;
+    }
+    @keyframes img {
+        0%,100% {
+            transform: translatey(-0px);
+            /* opacity: 0; */
+        }
+        50%{
+            /* opacity: 1; */
+            transform: translatey(-780px);
+        }
+    }
+    /* ----------------------about section css---------- */
+    .aboutsection{
+        overflow: hidden;
+        height: 90vh;
+    }
+    .aboutphoto{
+        animation-iteration-count: infinite;
+        animation-duration: 3s;
+        transition: all ease 0.5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        height: 100vh;
+        background-color: #000;
+    }
+    .aboutphoto::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(#00ccff, #d400d4);
+        animation:  animate 14s linear infinite;
+        transition: all 0.5s ease;
+    }
+    .aboutphoto::after{
+        content: '';
+        position: absolute;
+        inset: 4px;
+        background-image: url(../img/20191214225534_IMG_8191-01.jpeg) !important;
+        background-size: 100% 100%;
+        border-radius: 20px;
+        height: 100vh;
+    }
+    @keyframes animate {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(200deg);
+        }
+    }
+    @keyframes aboutimg {
+        0%,100% {
+            transform: scale(0);
+            /* opacity: 0; */
+        }
+        50%{
+            /* opacity: 1; */
+            transform: scale(0,1);
+        }
+    }
+    .abouttext{
+        background-color: #000;
+        position: relative;
+    }
+    .display-4{
+        letter-spacing: 5px;
+        position: absolute;
+        top: 120px;
+        left: 80px;
+        animation-name: display-4;
+        animation-duration: 1s;
+        animation-delay: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+    }
+    @keyframes display-4 {
+        0%{
+            rotate: sekew;
+        }
+        100%{
+    transform: translate(-150PX);
+        }
+    }
+    .display-3{
+        font-size: 30px;
+        /* letter-spacing: 5px; */
+        position: absolute;
+        top: 200px;
+        left: 80px;
+    }
+    .aboutparagraph{
+        text-align: justify;
+        max-width: 70%;
+        position: absolute;
+        top: 280px;
+        left: 80px;
+        display: block;
+    }
+    .btnabout{
+        background-color: #f00;
+        position: absolute;
+        padding: 10px;
+        font-size: 20px;
+        width: 150px;
+        bottom: 237px;
+        left: 178px;
+        border-radius: 20px;
+        text-align: center;
+        transition: all 0.5s linear;
+        border: 1px solid transparent;
+    }
+    .btnabout:hover{
+        background-color: transparent;
+        border: 1px solid #ffdf;
+        color: #f00;
+    }
+    .oursection{
+        height: 100vh;
+    }
+
+}  
